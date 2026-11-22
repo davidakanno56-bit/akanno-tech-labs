@@ -116,10 +116,10 @@ export default function AboutPage() {
         <div className="rounded-3xl p-8 sm:p-12 bg-background-secondary border border-border-light shadow-card mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-4 text-center lg:text-left">
-              <div className="w-44 h-52 rounded-2xl mx-auto lg:mx-0 overflow-hidden border-2 border-primary/20 p-1 bg-white shadow-md mb-6">
+              <div className="w-44 h-56 rounded-2xl mx-auto lg:mx-0 overflow-hidden border-2 border-primary/20 p-1 bg-white shadow-md mb-6">
                 <img
-                  src="/assets/david_gini_akanno.jpg"
-                  alt="David Gini Akanno"
+                  src="/images/founder/afSNET-founder-portrait-3.jpg"
+                  alt="David Gini Akanno - Founder &amp; CEO"
                   className="w-full h-full object-cover object-top rounded-xl"
                 />
               </div>
@@ -127,7 +127,7 @@ export default function AboutPage() {
                 David Gini Akanno
               </h3>
               <p className="text-xs font-mono font-semibold text-primary mb-3">
-                Founder &amp; Software Developer
+                Founder &amp; CEO — Akanno Tech Labs Limited
               </p>
               <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
                 <span className="text-xs font-mono px-3 py-1 rounded-lg bg-white border border-border-light text-navy font-medium shadow-2xs">

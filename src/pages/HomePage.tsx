@@ -236,8 +236,8 @@ export default function HomePage() {
               <div className="lg:col-span-4 text-center lg:text-left">
                 <div className="w-36 h-48 sm:w-44 sm:h-56 rounded-2xl mx-auto lg:mx-0 overflow-hidden border-2 border-primary/20 p-1 bg-white shadow-md mb-5">
                   <img
-                    src="/assets/david_gini_akanno.jpg"
-                    alt="David Gini Akanno"
+                    src="/images/founder/afSNET-founder-portrait-3.jpg"
+                    alt="David Gini Akanno - Founder &amp; CEO"
                     className="w-full h-full object-cover object-top rounded-xl"
                   />
                 </div>
@@ -245,7 +245,7 @@ export default function HomePage() {
                   David Gini Akanno
                 </h3>
                 <p className="text-xs font-mono text-primary font-semibold mb-3">
-                  Founder &amp; Software Developer
+                  Founder &amp; CEO
                 </p>
                 <div className="flex flex-wrap gap-1.5 justify-center lg:justify-start mb-3">
                   <span className="text-[11px] font-mono px-2.5 py-1 rounded-md bg-background-secondary border border-border-light text-navy font-medium">

@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: 'Solutions', href: '/solutions' },
   { label: 'Capabilities', href: '/capabilities' },
   { label: 'About', href: '/about' },
-  { label: 'Founder', href: '/founder' },
+  { label: 'Founder & CEO', href: '/founder' },
   { label: 'Contact', href: '/contact' },
 ] as const;
 
