@@ -20,7 +20,7 @@ export const CAPABILITIES: Capability[] = [
     title: 'Cybersecurity & Security Engineering',
     badge: 'Defensive Systems',
     summary: 'Comprehensive threat modeling, defensive security engineering, SOC telemetry readiness, and cryptographic data integrity validation.',
-    description: 'Under the technical guidance of founder David Gini Akanno (certified SOC analyst and defensive security researcher), we embed security into the development lifecycle from day one, rather than treating it as an afterthought.',
+    description: 'Under the technical guidance of founder David Gini Akanno (software developer with a background in cybersecurity, software development, and startup product building), we embed security into the development lifecycle from day one, rather than treating it as an afterthought.',
     technologies: ['Zero Trust Architecture', 'Cryptographic Verification', 'SIEM / SOC Integration', 'Threat Modeling', 'OWASP ASVS', 'Hardware-backed Keystores'],
     deliverables: [
       'Pre-audit threat surface mapping & vulnerability triage',

@@ -38,7 +38,7 @@ export const SOLUTIONS: Solution[] = [
     title: 'Cybersecurity Engineering',
     category: 'Defensive Systems',
     tagline: 'Defensive security architectures, cryptographic verification, and tamper-evident data integrity.',
-    description: 'Spearheaded by founder David Gini Akanno (certified SOC analyst and defensive security researcher), our security engineering practice embeds zero-trust controls, cryptographic authentication protocols, and rigorous threat modeling into every layer of software design.',
+    description: 'Spearheaded by founder David Gini Akanno (software developer with a background in cybersecurity, software development, and startup product building), our security engineering practice embeds zero-trust controls, cryptographic authentication protocols, and rigorous threat modeling into every layer of software design.',
     coreCapabilities: [
       'Zero-trust network architecture design and threat vector surface minimization',
       'HMAC-SHA256 and asymmetric cryptographic verification protocols',

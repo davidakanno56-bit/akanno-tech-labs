@@ -94,7 +94,7 @@ export default function Hero() {
                 <span>FOUNDER-LED</span>
               </div>
               <p className="text-xl sm:text-2xl font-bold font-display text-navy">David Gini Akanno</p>
-              <p className="text-[11px] text-foreground-muted">Certified SOC Analyst &amp; Researcher</p>
+              <p className="text-[11px] text-foreground-muted">Founder &amp; Software Developer</p>
             </div>
 
             <div className="p-3">
@@ -103,7 +103,7 @@ export default function Hero() {
                 <span>JURISDICTION</span>
               </div>
               <p className="text-xl sm:text-2xl font-bold font-display text-navy">Nigeria to Global</p>
-              <p className="text-[11px] text-foreground-muted">RC 9986069 &bull; Lagos HQ</p>
+              <p className="text-[11px] text-foreground-muted">RC 9986069 &bull; Calabar, Nigeria</p>
             </div>
           </div>
         </ScrollReveal>

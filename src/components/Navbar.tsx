@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: 'Solutions', href: '/solutions' },
   { label: 'Capabilities', href: '/capabilities' },
   { label: 'About', href: '/about' },
+  { label: 'Founder', href: '/founder' },
   { label: 'Contact', href: '/contact' },
 ] as const;
 
@@ -36,11 +37,10 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
             ? 'bg-white/95 backdrop-blur-md shadow-subtle border-b border-border-light py-3'
             : 'bg-white/85 backdrop-blur-sm border-b border-border-light/60 py-4'
-        }`}
+          }`}
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 md:px-8 lg:px-16">
           {/* Logo */}
@@ -75,10 +75,9 @@ export default function Navbar() {
                 <NavLink
                   to={href}
                   className={({ isActive }) =>
-                    `px-3.5 py-2 rounded-lg text-sm font-medium transition-all ${
-                      isActive
-                        ? 'text-primary bg-primary/10 font-semibold'
-                        : 'text-foreground-muted hover:text-navy hover:bg-black/[0.03]'
+                    `px-3.5 py-2 rounded-lg text-sm font-medium transition-all ${isActive
+                      ? 'text-primary bg-primary/10 font-semibold'
+                      : 'text-foreground-muted hover:text-navy hover:bg-black/[0.03]'
                     }`
                   }
                 >
@@ -173,10 +172,9 @@ export default function Navbar() {
                           to={href}
                           onClick={closeMenu}
                           className={({ isActive }) =>
-                            `flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium transition-colors ${
-                              isActive
-                                ? 'bg-primary/10 text-primary font-bold'
-                                : 'text-foreground hover:bg-background-secondary'
+                            `flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium transition-colors ${isActive
+                              ? 'bg-primary/10 text-primary font-bold'
+                              : 'text-foreground hover:bg-background-secondary'
                             }`
                           }
                         >
@@ -191,7 +189,7 @@ export default function Navbar() {
                 <div className="p-4 rounded-xl bg-background-secondary border border-border-light text-xs text-foreground-muted space-y-1">
                   <p className="font-semibold text-navy">Akanno Tech Labs Limited</p>
                   <p className="font-mono text-[11px]">CAC RC: 9986069</p>
-                  <p>HQ: Lagos, Nigeria</p>
+                  <p>Calabar, Cross River State, Nigeria</p>
                 </div>
               </div>
 

@@ -52,14 +52,12 @@ export default function ProductCard({ product, index, onSelect }: ProductCardPro
         {/* Development Status */}
         <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between">
           <span
-            className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border shadow-sm backdrop-blur-md bg-white/95 ${
-              statusBadgeStyles[product.statusColor] ?? statusBadgeStyles.blue
-            }`}
+            className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border shadow-sm backdrop-blur-md bg-white/95 ${statusBadgeStyles[product.statusColor] ?? statusBadgeStyles.blue
+              }`}
           >
             <span
-              className={`w-1.5 h-1.5 rounded-full animate-pulse ${
-                statusDotStyles[product.statusColor] ?? statusDotStyles.blue
-              }`}
+              className={`w-1.5 h-1.5 rounded-full animate-pulse ${statusDotStyles[product.statusColor] ?? statusDotStyles.blue
+                }`}
             />
             {product.status}
           </span>

@@ -3,6 +3,7 @@ export type ProductStatus =
   | 'Prototype / Evaluation'
   | 'Functional prototype under development'
   | 'Technology prototype'
+  | 'Product Initiative / Security R&D'
   | 'Prototype';
 
 export interface Product {

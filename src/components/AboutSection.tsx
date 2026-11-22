@@ -102,9 +102,9 @@ export default function AboutSection() {
               <p>
                 Founded by{' '}
                 <strong className="text-white">David Gini Akanno</strong> — a
-                certified SOC analyst, defensive security researcher, and
-                full-stack engineer — the company operates at the intersection of
-                enterprise software, cybersecurity, and artificial intelligence.
+                software developer with a background in cybersecurity, software
+                development, and startup product building — the company operates at the intersection of
+                enterprise software, cybersecurity, and applied artificial intelligence.
               </p>
             </div>
 

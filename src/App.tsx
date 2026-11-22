@@ -9,6 +9,7 @@ import ProductDetailPage from './pages/ProductDetailPage';
 import SolutionsPage from './pages/SolutionsPage';
 import CapabilitiesPage from './pages/CapabilitiesPage';
 import AboutPage from './pages/AboutPage';
+import FounderPage from './pages/FounderPage';
 import ContactPage from './pages/ContactPage';
 
 // Scroll to top automatically on route changes
@@ -61,6 +62,7 @@ export default function App() {
             <Route path="/solutions" element={<SolutionsPage />} />
             <Route path="/capabilities" element={<CapabilitiesPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/founder" element={<FounderPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>

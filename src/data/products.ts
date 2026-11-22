@@ -10,8 +10,9 @@ export const PRODUCTS: Product[] = [
     status: 'Prototype / Evaluation',
     statusColor: 'blue',
     website: 'https://skygrid-intelligence.vercel.app/',
-    primaryImage: '/assets/skygrid_preview.png',
+    primaryImage: '/assets/skygrid_hero.png',
     gallery: [
+      '/assets/skygrid_hero.png',
       '/assets/skygrid_preview.png',
     ],
     keyFeatures: [
@@ -172,5 +173,33 @@ export const PRODUCTS: Product[] = [
     problemSolved: 'Tourists face fraud anxiety and unverified merchant services; local tourism operators suffer from cash leakage, delayed bank reconciliation, and booking dispute chargebacks.',
     stageDetails: 'Tourism discovery and booking platform under development; pre-commercial pilot evaluation in regional tourism corridors.',
     technologies: ['React', 'TypeScript', 'Paystack Escrow Architecture', 'HMAC Voucher Verification', 'Tailwind CSS']
+  },
+  {
+    id: 'aetherguard',
+    name: 'AetherGuard',
+    tagline: 'Defensive Security & Automated Zero-Trust Threat Surface Modeling',
+    description: 'A security-focused product initiative within the Akanno Tech Labs portfolio dedicated to perimeter defense, continuous credential integrity auditing, and cryptographic access validation.',
+    category: 'Cybersecurity & Defensive Engineering',
+    status: 'Product Initiative / Security R&D',
+    statusColor: 'cyan',
+    primaryImage: '/assets/portvault_maritime_command.png',
+    gallery: [
+      '/assets/portvault_maritime_command.png'
+    ],
+    keyFeatures: [
+      'Automated threat modeling aligned with OWASP ASVS standards',
+      'Continuous cryptographic credential verification and tamper alerts',
+      'Immutable SIEM event logging with hash-chained integrity proofs',
+      'Zero-trust micro-segmentation blueprints for regional cloud infrastructure'
+    ],
+    technicalArchitecture: [
+      'Stateless HMAC-SHA256 token verification middleware',
+      'Asymmetric public-key verification layer for microservice RPCs',
+      'Real-time anomaly scoring for abnormal API authorization requests',
+      'Automated compliance report exporter for enterprise security reviews'
+    ],
+    problemSolved: 'Regional enterprises face sophisticated credential compromise and ransomware vectors while relying on fragmented security point solutions lacking unified verification proofs.',
+    stageDetails: 'Security-focused product initiative and engineering research program undergoing internal protocol validation.',
+    technologies: ['Cryptographic Verification', 'Threat Modeling', 'Zero Trust Architecture', 'Python', 'FastAPI']
   }
 ];

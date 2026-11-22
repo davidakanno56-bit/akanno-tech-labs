@@ -96,6 +96,17 @@ export default function InteractiveShowcase() {
 
         {/* Interactive Workspace Box */}
         <div className="bg-white rounded-3xl border border-border-light shadow-card overflow-hidden">
+          {/* Transparency / Demo Mode Notice */}
+          <div className="px-6 py-2.5 bg-background-secondary border-b border-border-light flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-foreground-muted">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse" />
+              <span>Interactive Concept Simulation &bull; Synthetic Test Data</span>
+            </div>
+            <span className="text-[11px] text-foreground-subtle hidden sm:inline">
+              Engineered by Akanno Tech Labs for Architectural Evaluation
+            </span>
+          </div>
+
           <AnimatePresence mode="wait">
             {/* ─── SkyGrid Simulator ─── */}
             {activeTab === 'skygrid' && (

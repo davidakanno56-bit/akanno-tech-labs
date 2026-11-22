@@ -62,7 +62,7 @@ export default function AboutPage() {
               <p className="font-display text-lg font-bold text-navy">
                 David Gini Akanno
               </p>
-              <p className="text-xs text-foreground-muted mt-1">Defensive Security Researcher</p>
+              <p className="text-xs text-foreground-muted mt-1">Founder &amp; Software Developer</p>
             </div>
           </div>
         </div>
@@ -116,27 +116,34 @@ export default function AboutPage() {
         <div className="rounded-3xl p-8 sm:p-12 bg-background-secondary border border-border-light shadow-card mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-4 text-center lg:text-left">
-              <div className="w-44 h-44 rounded-2xl mx-auto lg:mx-0 overflow-hidden border-2 border-primary/20 p-1.5 bg-white shadow-md mb-6">
+              <div className="w-44 h-52 rounded-2xl mx-auto lg:mx-0 overflow-hidden border-2 border-primary/20 p-1 bg-white shadow-md mb-6">
                 <img
-                  src="/assets/atl_logo_badge.png"
+                  src="/assets/david_gini_akanno.jpg"
                   alt="David Gini Akanno"
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover object-top rounded-xl"
                 />
               </div>
               <h3 className="font-display text-2xl font-bold text-navy mb-1">
                 David Gini Akanno
               </h3>
               <p className="text-xs font-mono font-semibold text-primary mb-3">
-                Founder &amp; Principal Software Engineer
+                Founder &amp; Software Developer
               </p>
-              <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+              <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
                 <span className="text-xs font-mono px-3 py-1 rounded-lg bg-white border border-border-light text-navy font-medium shadow-2xs">
-                  Certified SOC Analyst
+                  Software Developer
                 </span>
                 <span className="text-xs font-mono px-3 py-1 rounded-lg bg-white border border-border-light text-navy font-medium shadow-2xs">
-                  Defensive Security Researcher
+                  Cybersecurity &amp; Startup Builder
                 </span>
               </div>
+              <Link
+                to="/founder"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-hover underline decoration-primary/30"
+              >
+                <span>Read Full Founder Profile &amp; Vision</span>
+                <ArrowRight size={13} />
+              </Link>
             </div>
 
             <div className="lg:col-span-8 space-y-4">
@@ -157,7 +164,7 @@ export default function AboutPage() {
               <div className="pt-4 border-t border-border-light flex flex-wrap items-center gap-6 text-xs text-foreground-subtle font-mono">
                 <div className="flex items-center gap-2">
                   <MapPin size={16} className="text-primary" />
-                  <span>Engineering Base: Lagos, Nigeria</span>
+                  <span>Operating Base: Calabar, Cross River State, Nigeria</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail size={16} className="text-primary" />

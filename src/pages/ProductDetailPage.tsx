@@ -51,9 +51,8 @@ export default function ProductDetailPage() {
               {product.category}
             </span>
             <span
-              className={`text-xs px-3 py-1 rounded-full font-semibold border ${
-                statusBadgeStyles[product.statusColor] ?? statusBadgeStyles.blue
-              }`}
+              className={`text-xs px-3 py-1 rounded-full font-semibold border ${statusBadgeStyles[product.statusColor] ?? statusBadgeStyles.blue
+                }`}
             >
               {product.status}
             </span>

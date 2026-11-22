@@ -234,27 +234,34 @@ export default function HomePage() {
           <div className="p-8 sm:p-12 rounded-3xl bg-white border border-border-light shadow-card">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
               <div className="lg:col-span-4 text-center lg:text-left">
-                <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl mx-auto lg:mx-0 overflow-hidden border-2 border-primary/20 p-1 bg-background-secondary shadow-md mb-5">
+                <div className="w-36 h-48 sm:w-44 sm:h-56 rounded-2xl mx-auto lg:mx-0 overflow-hidden border-2 border-primary/20 p-1 bg-white shadow-md mb-5">
                   <img
-                    src="/assets/atl_logo_badge.png"
-                    alt="Akanno Tech Labs Emblem"
-                    className="w-full h-full object-cover rounded-xl"
+                    src="/assets/david_gini_akanno.jpg"
+                    alt="David Gini Akanno"
+                    className="w-full h-full object-cover object-top rounded-xl"
                   />
                 </div>
                 <h3 className="font-display text-2xl font-bold text-navy mb-1">
                   David Gini Akanno
                 </h3>
                 <p className="text-xs font-mono text-primary font-semibold mb-3">
-                  Founder &amp; Principal Software Engineer
+                  Founder &amp; Software Developer
                 </p>
-                <div className="flex flex-wrap gap-1.5 justify-center lg:justify-start">
+                <div className="flex flex-wrap gap-1.5 justify-center lg:justify-start mb-3">
                   <span className="text-[11px] font-mono px-2.5 py-1 rounded-md bg-background-secondary border border-border-light text-navy font-medium">
-                    SOC Analyst
+                    Software Developer
                   </span>
                   <span className="text-[11px] font-mono px-2.5 py-1 rounded-md bg-background-secondary border border-border-light text-navy font-medium">
-                    Defensive Security Researcher
+                    Cybersecurity Researcher
                   </span>
                 </div>
+                <Link
+                  to="/founder"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-hover"
+                >
+                  <span>Explore Founder Profile</span>
+                  <ArrowRight size={13} />
+                </Link>
               </div>
 
               <div className="lg:col-span-8 space-y-4">
@@ -271,7 +278,7 @@ export default function HomePage() {
                 <div className="pt-4 flex flex-wrap items-center gap-6 text-xs text-foreground-subtle font-mono">
                   <div className="flex items-center gap-1.5">
                     <Database size={15} className="text-primary" />
-                    <span>Lagos, Nigeria Headquarters</span>
+                    <span>Calabar, Cross River State, Nigeria</span>
                   </div>
                   <div className="flex items-center gap-1.5">
                     <Cpu size={15} className="text-cyan-600" />

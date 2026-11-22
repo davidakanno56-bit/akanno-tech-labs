@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: 'Solutions', href: '/solutions' },
   { label: 'Capabilities', href: '/capabilities' },
   { label: 'About Company', href: '/about' },
+  { label: 'Founder Profile', href: '/founder' },
   { label: 'Contact & Inquiries', href: '/contact' },
 ] as const;
 
@@ -50,7 +51,7 @@ export default function Footer() {
             <div className="pt-2 space-y-2 text-xs font-mono text-foreground-light/90">
               <div className="flex items-center gap-2">
                 <MapPin size={14} className="text-cyan-accent shrink-0" />
-                <span>Headquarters: Lagos, Nigeria</span>
+                <span>Operating Base: Calabar, Cross River State, Nigeria</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={14} className="text-cyan-accent shrink-0" />
@@ -63,7 +64,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <ShieldCheck size={14} className="text-emerald-400 shrink-0" />
-                <span>Founder: David Gini Akanno &bull; Defensive Security Lead</span>
+                <span>Founder: David Gini Akanno &bull; Founder &amp; Software Developer</span>
               </div>
             </div>
           </div>

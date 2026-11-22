@@ -7,14 +7,14 @@ const CONTACT_METHODS = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'david@akannotechlabs.com',
-    href: 'mailto:david@akannotechlabs.com',
+    value: 'davidakanno56@gmail.com',
+    href: 'mailto:davidakanno56@gmail.com',
   },
   {
     icon: MapPin,
     label: 'Location',
-    value: 'Lagos, Nigeria',
-    href: 'https://maps.google.com/?q=Lagos,Nigeria',
+    value: 'Calabar, Cross River State, Nigeria',
+    href: 'https://maps.google.com/?q=Calabar,Cross+River+State,Nigeria',
   },
   {
     icon: Globe,

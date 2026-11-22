@@ -117,10 +117,10 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <span className="text-xs font-mono font-semibold text-primary uppercase tracking-wider block">
-                    Engineering Base
+                    Operating Base
                   </span>
                   <p className="text-navy font-bold text-sm sm:text-base">
-                    Lagos, Nigeria
+                    Calabar, Cross River State, Nigeria
                   </p>
                   <span className="text-xs text-foreground-muted">
                     Global &amp; African Remote Engagements
