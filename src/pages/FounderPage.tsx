@@ -93,81 +93,80 @@ export default function FounderPage() {
         </div>
 
         {/* ─── Hero Section: Founder & CEO Profile ─── */}
-        <div className="mb-20 rounded-3xl bg-background-secondary border border-border-light p-8 sm:p-12 lg:p-16 shadow-subtle relative overflow-hidden">
+        <div className="mb-20 rounded-3xl bg-background-secondary border border-border-light p-6 sm:p-10 lg:p-12 shadow-subtle relative overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-cyan-accent/10 rounded-full blur-2xl pointer-events-none" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center relative z-10">
-            {/* Main CEO Hero Photo Column */}
-            <div className="lg:col-span-5 flex flex-col items-center lg:items-start">
-              <div className="relative group w-full max-w-sm">
-                <div className="absolute -inset-1.5 bg-gradient-to-tr from-primary via-cyan-accent to-emerald-500 rounded-3xl blur opacity-35 group-hover:opacity-60 transition duration-500" />
-                <div className="relative rounded-2xl overflow-hidden bg-white border border-border-light shadow-xl aspect-[3/4] w-full">
-                  <img
-                    src="/images/founder/afSNET-founder-portrait-3.jpg"
-                    alt="David Gini Akanno - Founder &amp; CEO of Akanno Tech Labs Limited"
-                    className="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-500"
-                    loading="eager"
-                  />
-                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy/95 via-navy/60 to-transparent p-5 text-white text-left">
-                    <p className="font-display font-bold text-xl leading-tight">David Gini Akanno</p>
-                    <p className="text-xs font-mono text-cyan-accent mt-0.5">Founder &amp; CEO</p>
-                    <p className="text-[11px] text-foreground-light/80 mt-1">Akanno Tech Labs Limited &bull; Calabar, Nigeria</p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+            {/* Main CEO Hero Photo Column (45-50% width on desktop, prominent first on mobile) */}
+            <div className="lg:col-span-5 flex flex-col items-center">
+              <div className="w-full max-w-md lg:max-w-none">
+                <div className="relative rounded-2xl overflow-hidden bg-white border border-border-light shadow-card group">
+                  <div className="aspect-[4/5] w-full relative overflow-hidden bg-slate-100">
+                    <img
+                      src="/images/founder/david-gini-akanno-executive-crop-v2.png"
+                      alt="David Gini Akanno - Founder &amp; CEO of Akanno Tech Labs Limited"
+                      className="w-full h-full object-cover object-top hover:scale-[1.01] transition-transform duration-500"
+                      loading="eager"
+                    />
                   </div>
                 </div>
-              </div>
 
-              {/* Caption / Attribution Card */}
-              <div className="mt-4 p-3.5 rounded-xl bg-white border border-border-light text-[11px] text-foreground-muted flex items-start gap-2.5 max-w-sm shadow-2xs">
-                <CheckCircle2 size={16} className="text-emerald-600 shrink-0 mt-0.5" />
-                <span>
-                  <strong>Official Corporate Portrait:</strong> David Gini Akanno &bull; Founder &amp; Software Developer, Akanno Tech Labs Limited (Calabar, Nigeria).
-                </span>
+                {/* Attribution / Verification Bar Underneath */}
+                <div className="mt-3.5 px-4 py-2.5 rounded-xl bg-white/80 border border-border-light text-[11px] text-foreground-muted flex items-center justify-between shadow-2xs">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 size={15} className="text-emerald-600 shrink-0" />
+                    <span className="font-medium text-navy">Verified Corporate Portrait</span>
+                  </div>
+                  <span className="font-mono text-[10px] text-foreground-subtle">Calabar, Nigeria</span>
+                </div>
               </div>
             </div>
 
             {/* Founder Biography Column */}
-            <div className="lg:col-span-7 space-y-6">
-              <ScrollReveal>
+            <div className="lg:col-span-7">
+              <ScrollReveal className="space-y-5">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-primary/10 text-primary border border-primary/20">
                   <Sparkles size={13} />
                   <span>Executive Leadership &bull; RC 9986069</span>
                 </div>
 
-                <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-navy mt-4 mb-1">
-                  David Gini Akanno
-                </h1>
+                <div className="mt-3">
+                  <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-navy">
+                    David Gini Akanno
+                  </h1>
 
-                <p className="font-display text-xl sm:text-2xl font-bold text-primary">
-                  Founder &amp; CEO — Akanno Tech Labs Limited
-                </p>
+                  <p className="font-display text-lg sm:text-xl font-bold text-primary mt-1">
+                    Founder &amp; CEO — Akanno Tech Labs Limited
+                  </p>
 
-                <p className="text-sm sm:text-base font-mono text-foreground-muted">
-                  Software Developer | Cybersecurity Enthusiast | Technology Entrepreneur
-                </p>
+                  <p className="text-xs sm:text-sm font-mono text-foreground-muted mt-1">
+                    Software Developer | Cybersecurity Enthusiast | Technology Entrepreneur
+                  </p>
+                </div>
 
                 {/* Location & Contact Bar */}
                 <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-foreground-muted py-2.5 border-y border-border-light">
                   <div className="flex items-center gap-1.5">
-                    <MapPin size={15} className="text-primary shrink-0" />
+                    <MapPin size={14} className="text-primary shrink-0" />
                     <span>Calabar, Cross River State, Nigeria</span>
                   </div>
                   <span>&bull;</span>
                   <div className="flex items-center gap-1.5">
-                    <Mail size={15} className="text-primary shrink-0" />
+                    <Mail size={14} className="text-primary shrink-0" />
                     <a href="mailto:davidakanno56@gmail.com" className="text-navy hover:underline">
                       davidakanno56@gmail.com
                     </a>
                   </div>
                   <span>&bull;</span>
                   <div className="flex items-center gap-1.5">
-                    <Shield size={15} className="text-emerald-600 shrink-0" />
+                    <Shield size={14} className="text-emerald-600 shrink-0" />
                     <span>Defensive Security Focus</span>
                   </div>
                 </div>
 
                 {/* Canonical Biography */}
-                <div className="space-y-4 text-foreground-muted leading-relaxed text-base pt-2">
+                <div className="space-y-3.5 text-foreground-muted leading-relaxed text-sm sm:text-base pt-1">
                   <p>
                     David Gini Akanno is a Nigerian technology entrepreneur, software developer and founder of <strong>Akanno Tech Labs Limited</strong>, a technology company established in November 2026.
                   </p>
@@ -186,17 +185,17 @@ export default function FounderPage() {
                 </div>
 
                 {/* Action CTAs */}
-                <div className="pt-4 flex flex-wrap items-center gap-3">
+                <div className="pt-3 flex flex-wrap items-center gap-3">
                   <a
                     href="mailto:davidakanno56@gmail.com?subject=Executive%20Inquiry%20for%20David%20Gini%20Akanno%20-%20Akanno%20Tech%20Labs"
-                    className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-white font-semibold text-sm shadow-sm hover:bg-primary-hover hover:shadow-glow-blue/30 transition-all"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-white font-semibold text-sm shadow-sm hover:bg-primary-hover hover:shadow-glow-blue/30 transition-all"
                   >
-                    <Mail size={16} />
+                    <Mail size={15} />
                     <span>Contact Founder Directly</span>
                   </a>
                   <Link
                     to="/products"
-                    className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-white border border-border-light text-navy font-semibold text-sm hover:bg-background-secondary transition-colors"
+                    className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-border-light text-navy font-semibold text-sm hover:bg-background-secondary transition-colors"
                   >
                     <span>Explore Our Products</span>
                     <ArrowRight size={15} />
@@ -403,7 +402,7 @@ export default function FounderPage() {
         <div className="mb-24 p-8 sm:p-12 rounded-3xl bg-background-secondary border border-border-light shadow-subtle">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-4 flex justify-center">
-              <div className="w-56 sm:w-64 rounded-2xl overflow-hidden border border-border-light bg-white shadow-md aspect-[3/4]">
+              <div className="w-56 sm:w-64 rounded-2xl overflow-hidden border border-border-light bg-white shadow-md aspect-[4/5]">
                 <img
                   src="/images/founder/afSNET-founder-portrait-1.jpg"
                   alt="David Gini Akanno - Editorial Portrait"
