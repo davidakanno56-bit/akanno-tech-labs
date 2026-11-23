@@ -64,6 +64,17 @@ export default function Hero() {
               <span>Enterprise Solutions</span>
               <ArrowUpRight size={16} className="text-foreground-subtle" />
             </Link>
+
+            <a
+              href="https://tradeshield-ai-4qr.pages.dev/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-500/10 border border-cyan-500/30 px-6 py-4 text-sm font-semibold text-cyan-800 hover:bg-cyan-600 hover:text-white transition-all w-full sm:w-auto shadow-2xs"
+            >
+              <span className="w-2 h-2 rounded-full bg-cyan-500 animate-ping" />
+              <span>TradeShield Live Portal</span>
+              <ArrowUpRight size={16} />
+            </a>
           </div>
         </ScrollReveal>
 

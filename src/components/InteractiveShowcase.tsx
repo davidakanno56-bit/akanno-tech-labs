@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plane, Ship, ShieldAlert, CheckCircle2, AlertTriangle, ArrowRight, RefreshCw, KeyRound, Radio } from 'lucide-react';
+import { Plane, Ship, ShieldAlert, CheckCircle2, AlertTriangle, ArrowRight, RefreshCw, KeyRound, Radio, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 type DemoTab = 'skygrid' | 'portvault' | 'tradeshield';
@@ -425,13 +425,24 @@ export default function InteractiveShowcase() {
                       Deterministic verification cross-comparing Commercial Invoices, Bills of Lading, and Letters of Credit to prevent multi-million dollar supplier fraud.
                     </p>
                   </div>
-                  <Link
-                    to="/products/tradeshield"
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-white text-xs font-semibold hover:bg-primary-hover shadow-sm transition-colors"
-                  >
-                    <span>View TradeShield Specs</span>
-                    <ArrowRight size={14} />
-                  </Link>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <a
+                      href="https://tradeshield-ai-4qr.pages.dev/login"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-600 text-white text-xs font-semibold hover:bg-cyan-700 shadow-sm transition-colors"
+                    >
+                      <span>Launch TradeShield Portal</span>
+                      <ExternalLink size={14} />
+                    </a>
+                    <Link
+                      to="/products/tradeshield"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-white text-xs font-semibold hover:bg-primary-hover shadow-sm transition-colors"
+                    >
+                      <span>View TradeShield Specs</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-8">

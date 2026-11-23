@@ -42,6 +42,7 @@ export const PRODUCTS: Product[] = [
     category: 'Trade-Risk Technology & AI',
     status: 'Functional prototype under development',
     statusColor: 'cyan',
+    website: 'https://tradeshield-ai-4qr.pages.dev/login',
     primaryImage: '/assets/tradeshield_executive_overview_dashboard_1.png',
     gallery: [
       '/assets/tradeshield_executive_overview_dashboard_1.png',

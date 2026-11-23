@@ -19,6 +19,7 @@ const FOUNDER_PRODUCTS = [
     description: 'AI-assisted supplier fraud and trade-risk investigation, including document comparison, dark fleet maritime tracking, and structured reporting.',
     stage: 'Functional prototype under development',
     link: '/products/tradeshield',
+    externalUrl: 'https://tradeshield-ai-4qr.pages.dev/login',
     image: '/assets/tradeshield_executive_overview_dashboard_1.png',
     tags: ['Document Diff Intelligence', 'Supplier Verification', 'Dark Fleet AIS', 'FastAPI']
   },
@@ -101,7 +102,14 @@ export default function FounderPage() {
             {/* Main CEO Hero Photo Column (45-50% width on desktop, prominent first on mobile) */}
             <div className="lg:col-span-5 flex flex-col items-center">
               <div className="w-full max-w-md lg:max-w-none">
-                <div className="relative rounded-2xl overflow-hidden bg-white border border-border-light shadow-card group">
+                <div className="relative rounded-2xl overflow-hidden bg-white border border-cyan-500/30 shadow-[0_4px_30px_rgba(6,182,212,0.12)] group">
+                  {/* Futuristic Corner HUD Accents */}
+                  <div className="absolute top-2 left-2 z-20 font-mono text-[9px] text-cyan-accent bg-navy/80 px-2 py-0.5 rounded border border-cyan-accent/30 tracking-wider">
+                    ATL // BIOMETRIC 2048
+                  </div>
+                  <div className="absolute bottom-2 right-2 z-20 font-mono text-[9px] text-emerald-400 bg-navy/80 px-2 py-0.5 rounded border border-emerald-500/30 tracking-wider">
+                    CALABAR ENCLAVE
+                  </div>
                   <div className="aspect-[4/5] w-full relative overflow-hidden bg-slate-100">
                     <img
                       src="/images/founder/david-gini-akanno-executive-crop-v2.png"

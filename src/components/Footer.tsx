@@ -121,6 +121,47 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* ─── 2048 Quantum Planetary Grid Outro ─── */}
+        <div className="py-8 my-8 border-y border-white/10 bg-navy-surface/40 rounded-2xl p-6 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-80 h-32 bg-cyan-accent/5 rounded-full blur-2xl pointer-events-none" />
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6 relative z-10">
+            <div>
+              <div className="flex items-center gap-2 text-cyan-accent text-xs font-mono font-semibold uppercase tracking-widest">
+                <span className="w-2 h-2 rounded-full bg-cyan-accent animate-ping" />
+                <span>Global Sovereign Mesh Telemetry // 2048 Horizon</span>
+              </div>
+              <p className="text-xs text-foreground-light mt-1">
+                Decentralized intelligence networks spanning African maritime corridors, regional airspace and sovereign cryptographic vaults.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3 text-[11px] font-mono">
+              <span className="px-3 py-1.5 rounded-lg bg-navy border border-cyan-accent/30 text-cyan-accent flex items-center gap-1.5 shadow-[0_0_10px_rgba(6,182,212,0.15)]">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                CALABAR [0.8ms]
+              </span>
+              <span className="px-3 py-1.5 rounded-lg bg-navy border border-white/10 text-foreground-light flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+                LAGOS [4.2ms]
+              </span>
+              <span className="px-3 py-1.5 rounded-lg bg-navy border border-white/10 text-foreground-light flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+                LONDON [38ms]
+              </span>
+              <button
+                onClick={() => {
+                  sessionStorage.removeItem('atl_intro_seen_2048');
+                  window.location.reload();
+                }}
+                className="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-all hover:scale-105"
+                title="Replay 2048 Quantum Boot Sequence"
+              >
+                &gt; REPLAY 2048 BOOT
+              </button>
+            </div>
+          </div>
+        </div>
+
         {/* Corporate Legal & Compliance Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-foreground-light/70">
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-center md:text-left">

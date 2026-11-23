@@ -2,6 +2,11 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { NavLink, Link } from 'react-router-dom';
+import FuturisticHUD from './FuturisticHUD';
+
+interface NavbarProps {
+  onOpenTerminal?: () => void;
+}
 
 const NAV_LINKS = [
   { label: 'Home', href: '/' },
@@ -13,7 +18,7 @@ const NAV_LINKS = [
   { label: 'Contact', href: '/contact' },
 ] as const;
 
-export default function Navbar() {
+export default function Navbar({ onOpenTerminal }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -37,12 +42,14 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-subtle border-b border-border-light py-3'
-            : 'bg-white/85 backdrop-blur-sm border-b border-border-light/60 py-4'
-          }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? 'bg-white/95 backdrop-blur-md shadow-subtle border-b border-border-light'
+            : 'bg-white/90 backdrop-blur-sm border-b border-border-light/60'
+        }`}
       >
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 md:px-8 lg:px-16">
+        <FuturisticHUD onOpenTerminal={onOpenTerminal || (() => {})} />
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 md:px-8 lg:px-16 py-3">
           {/* Logo */}
           <Link
             to="/"
