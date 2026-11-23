@@ -121,7 +121,7 @@ export default function FounderPage() {
               <div className="mt-4 p-3.5 rounded-xl bg-white border border-border-light text-[11px] text-foreground-muted flex items-start gap-2.5 max-w-sm shadow-2xs">
                 <CheckCircle2 size={16} className="text-emerald-600 shrink-0 mt-0.5" />
                 <span>
-                  <strong>Official Portrait:</strong> David Gini Akanno at the AfSNET Conference in Calabar, Cross River State, Nigeria.
+                  <strong>Official Corporate Portrait:</strong> David Gini Akanno &bull; Founder &amp; Software Developer, Akanno Tech Labs Limited (Calabar, Nigeria).
                 </span>
               </div>
             </div>
@@ -246,64 +246,62 @@ export default function FounderPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-            {FOUNDER_PRODUCTS.map((prod, idx) => (
-              <ScrollReveal key={prod.name} delay={idx * 0.08}>
-                <div className="rounded-3xl p-7 bg-white border border-border-light shadow-subtle hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between h-full group">
-                  <div>
-                    {/* Stage & Category Badges */}
-                    <div className="flex items-center justify-between gap-2 mb-3">
-                      <span className="text-xs font-mono font-semibold px-2.5 py-1 rounded-md bg-background-secondary text-primary border border-border-light">
-                        {prod.category}
-                      </span>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-700 border border-emerald-500/20 font-medium">
-                        {prod.stage}
-                      </span>
-                    </div>
-
-                    {/* Product Name */}
-                    <h3 className="font-display text-xl font-bold text-navy group-hover:text-primary transition-colors mb-2.5">
-                      {prod.name}
-                    </h3>
-
-                    {/* Description */}
-                    <p className="text-xs sm:text-sm text-foreground-muted leading-relaxed mb-5">
-                      {prod.description}
-                    </p>
-
-                    {/* Architecture Tags */}
-                    <div className="flex flex-wrap gap-1.5 mb-6">
-                      {prod.tags.map(t => (
-                        <span key={t} className="text-[11px] font-mono px-2 py-0.5 rounded bg-background-secondary text-foreground-subtle border border-border-light/60">
-                          {t}
-                        </span>
-                      ))}
-                    </div>
+            {FOUNDER_PRODUCTS.map((prod) => (
+              <div key={prod.name} className="rounded-3xl p-7 bg-white border border-border-light shadow-subtle hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between h-full group">
+                <div>
+                  {/* Stage & Category Badges */}
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <span className="text-xs font-mono font-semibold px-2.5 py-1 rounded-md bg-background-secondary text-primary border border-border-light">
+                      {prod.category}
+                    </span>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-700 border border-emerald-500/20 font-medium">
+                      {prod.stage}
+                    </span>
                   </div>
 
-                  {/* Card Footer Actions */}
-                  <div className="pt-4 border-t border-border-light flex items-center justify-between">
-                    <Link
-                      to={prod.link}
-                      className="text-xs font-semibold text-primary inline-flex items-center gap-1.5 hover:gap-2 transition-all"
-                    >
-                      <span>Explore Architecture</span>
-                      <ArrowRight size={13} />
-                    </Link>
+                  {/* Product Name */}
+                  <h3 className="font-display text-xl font-bold text-navy group-hover:text-primary transition-colors mb-2.5">
+                    {prod.name}
+                  </h3>
 
-                    {prod.externalUrl && (
-                      <a
-                        href={prod.externalUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs font-mono text-foreground-muted hover:text-navy inline-flex items-center gap-1 transition-colors"
-                      >
-                        <span>Live Prototype</span>
-                        <ExternalLink size={12} />
-                      </a>
-                    )}
+                  {/* Description */}
+                  <p className="text-xs sm:text-sm text-foreground-muted leading-relaxed mb-5">
+                    {prod.description}
+                  </p>
+
+                  {/* Architecture Tags */}
+                  <div className="flex flex-wrap gap-1.5 mb-6">
+                    {prod.tags.map(t => (
+                      <span key={t} className="text-[11px] font-mono px-2 py-0.5 rounded bg-background-secondary text-foreground-subtle border border-border-light/60">
+                        {t}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              </ScrollReveal>
+
+                {/* Card Footer Actions */}
+                <div className="pt-4 border-t border-border-light flex items-center justify-between">
+                  <Link
+                    to={prod.link}
+                    className="text-xs font-semibold text-primary inline-flex items-center gap-1.5 hover:gap-2 transition-all"
+                  >
+                    <span>Explore Architecture</span>
+                    <ArrowRight size={13} />
+                  </Link>
+
+                  {prod.externalUrl && (
+                    <a
+                      href={prod.externalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-mono text-foreground-muted hover:text-navy inline-flex items-center gap-1 transition-colors"
+                    >
+                      <span>Live Prototype</span>
+                      <ExternalLink size={12} />
+                    </a>
+                  )}
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -382,22 +380,20 @@ export default function FounderPage() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-            {TECHNICAL_SKILLS.map((skill, idx) => {
+            {TECHNICAL_SKILLS.map((skill) => {
               const Icon = skill.icon;
               return (
-                <ScrollReveal key={skill.name} delay={idx * 0.04}>
-                  <div className="p-5 rounded-2xl bg-white border border-border-light shadow-2xs hover:shadow-subtle hover:border-primary/30 transition-all group">
-                    <div className="w-10 h-10 rounded-xl bg-background-secondary text-primary group-hover:bg-primary group-hover:text-white transition-colors flex items-center justify-center mb-3.5">
-                      <Icon size={20} />
-                    </div>
-                    <h3 className="font-display font-bold text-navy text-base group-hover:text-primary transition-colors">
-                      {skill.name}
-                    </h3>
-                    <p className="text-xs text-foreground-muted mt-1 leading-snug">
-                      {skill.role}
-                    </p>
+                <div key={skill.name} className="p-5 rounded-2xl bg-white border border-border-light shadow-2xs hover:shadow-subtle hover:border-primary/30 transition-all group">
+                  <div className="w-10 h-10 rounded-xl bg-background-secondary text-primary group-hover:bg-primary group-hover:text-white transition-colors flex items-center justify-center mb-3.5">
+                    <Icon size={20} />
                   </div>
-                </ScrollReveal>
+                  <h3 className="font-display font-bold text-navy text-base group-hover:text-primary transition-colors">
+                    {skill.name}
+                  </h3>
+                  <p className="text-xs text-foreground-muted mt-1 leading-snug">
+                    {skill.role}
+                  </p>
+                </div>
               );
             })}
           </div>

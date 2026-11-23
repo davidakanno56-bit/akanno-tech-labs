@@ -49,14 +49,12 @@ export default function Navbar() {
             onClick={closeMenu}
             className="flex items-center gap-3 select-none group"
           >
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-primary to-cyan-accent flex items-center justify-center p-0.5 shadow-sm group-hover:shadow-glow-blue/40 transition-shadow">
-              <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center">
-                <img
-                  src="/assets/atl_logo_transparent.png"
-                  alt="Akanno Tech Labs"
-                  className="h-7 w-auto object-contain"
-                />
-              </div>
+            <div className="h-10 w-10 rounded-xl bg-navy flex items-center justify-center p-1 shadow-sm border border-cyan-accent/20 group-hover:shadow-glow-blue/40 transition-shadow">
+              <img
+                src="/assets/atl_emblem_transparent.png"
+                alt="Akanno Tech Labs"
+                className="h-7 w-auto object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-display text-base sm:text-lg font-bold tracking-tight text-navy group-hover:text-primary transition-colors">

@@ -27,11 +27,11 @@ export default function Footer() {
           {/* Brand & Mission column */}
           <div className="lg:col-span-5 space-y-5">
             <Link to="/" className="flex items-center gap-3 select-none inline-block">
-              <div className="h-10 w-10 rounded-xl bg-white flex items-center justify-center p-1 shadow-sm">
+              <div className="h-11 w-11 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center p-1 shadow-sm">
                 <img
-                  src="/assets/atl_logo_transparent.png"
+                  src="/assets/atl_emblem_transparent.png"
                   alt="Akanno Tech Labs"
-                  className="h-7 w-auto object-contain"
+                  className="h-8 w-auto object-contain"
                 />
               </div>
               <div>
